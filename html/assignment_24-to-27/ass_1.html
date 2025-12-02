@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment 1</title>
+</head>
+
+<body>
+
+    <form action="test.py" method="post">
+        <!-- Username -->
+        <div>
+            <label for="username">Username</label>
+            <br>
+            <input type="text" name="username" id="username" placeholder="your unique username" required>
+        </div>
+
+        <hr>
+        <!-- Password -->
+        <div>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="your complex password">
+        </div>
+
+        <hr>
+        <!-- Phone -->
+        <div>
+            <label for="mobile">Mobile</label>
+            <br>
+            <input type="tel" name="mobile" id="mobile" placeholder="write +20 + your number">
+        </div>
+
+        <hr>
+        <!-- Email -->
+        <div>
+            <label for="Email">Email</label>
+            <br>
+            <input type="Email" name="Email" id="Email" placeholder="Your email address" required>
+        </div>
+
+        <hr>
+        <!-- subject -->
+        <div>
+            <label for="subject">Subject</label>
+            <br>
+            <input type="text" name="subject" placeholder="Your wierd subject" id="subject">
+        </div>
+
+        <hr>
+        <!-- hidden id -->
+        <div>
+            <input type="hidden" name="id" id="id" value="315408793">
+        </div>
+
+        <hr>
+        <!-- empty form -->
+        <input type="reset" value="Empty Form">
+        <!-- Submit -->
+        <input type="submit" name="submit" id="submit" value="Send Data">
+
+
+    </form>
+</body>
+
+</html>
