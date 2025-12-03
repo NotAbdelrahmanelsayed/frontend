@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2.</title>
+  </head>
+  <body>
+    <form method="get" action="">
+      <!-- Token -->
+      <div>
+        <input
+          type="hidden"
+          name="token"
+          value="b92f1fc2fce391ad7af633723afd3055"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" value="o@o.com" readonly />
+      </div>
+      <!-- User Name -->
+      <div>
+        <label for="username">UserName</label>
+        <input
+          autofocus
+          type="text"
+          id="username"
+          name="username"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+      </div>
+
+      <hr />
+      <!-- Skills -->
+      <div>
+        <label for="problem_solving">Problem Solving</label>
+        <input
+          type="checkbox"
+          value="Problem Solving"
+          id="problem_solving"
+          name="skills"
+        />
+      </div>
+      <div>
+        <label for="logical_thinking">Logical Thinking</label>
+        <input
+          type="checkbox"
+          value="Logical Thinking"
+          id="logical_thinking"
+          name="skills"
+        />
+      </div>
+      <div>
+        <label for="advanced_search">Advanced Search</label>
+        <input
+          type="checkbox"
+          value="Advanced Search"
+          id="advanced_search"
+          name="skills"
+        />
+      </div>
+      <div>
+        <label for="analysis">Analysis</label>
+        <input
+          type="checkbox"
+          value="analysis"
+          id="analysis"
+          name="skills"
+          checked
+        />
+      </div>
+      <hr />
+
+      <!-- Jobs -->
+      <div>
+        <label for="backend">Back-End Developer</label>
+        <input
+          type="radio"
+          value="Back-End Developer"
+          id="backend"
+          name="job"
+        />
+      </div>
+      <div>
+        <label for="business_analyst">Business Analyst</label>
+        <input
+          type="radio"
+          value="Business Analyst"
+          id="business_analyst"
+          name="job"
+          checked
+        />
+      </div>
+      <div>
+        <label for="project_manager">Project Manager</label>
+        <input
+          type="radio"
+          value="Project Manager"
+          id="project_manager"
+          name="job"
+        />
+      </div>
+      <hr />
+
+      <!-- Buttons -->
+      <input type="submit" value="Send" />
+      <input type="reset" value="Empty" />
+    </form>
+  </body>
+</html>
