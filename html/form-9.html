@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data List, Novalidate, Target</title>
+  </head>
+
+  <body>
+    <h1>Ebad Elrahman</h1>
+    <!--  -->
+    <!-- No validate to skip the restrictions like password length/ email type/ url..etc -->
+    <!--  -->
+    <form method="get" target="_blank">
+      <input list="programming" name="programming" />
+
+      <datalist id="programming">
+        <option value="HTML">
+        <option value="Python">
+        <option value="C">
+        <option value="C">
+      </datalist>
+
+      <hr />
+      <!-- resett -->
+      <input type="reset" />
+      <!-- Submit Button -->
+      <input type="submit" value="save" />
+    </form>
+  </body>
+</html>
