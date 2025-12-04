@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+}
+h1 {
+  border-top: dotted;
+  border-bottom: dotted;
+  border-left-style: double;
+  border-right-style: double;
+  padding: 10px;
+  font-family: "Press Start 2p", "consolas";
+  font-style: italic;
+  color: white;
+}
+p {
+  color: white;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: white;
+  padding: 10px;
+}

@@ -1,0 +1,38 @@
+a:link {
+  color: blue;
+  font-size: 50px;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: tomato;
+}
+
+a:active {
+  color: aqua;
+}
+
+button {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover {
+  color: brown;
+  background-color: tomato;
+}
+
+/* li:nth-child(even) {
+  background-color: yellow;
+}
+li:nth-child(odd) {
+  background-color: tomato;
+} */
+
+li:nth-child(5n) {
+  background-color: tomato;
+}

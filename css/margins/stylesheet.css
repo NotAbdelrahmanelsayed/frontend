@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+#box1 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: greenyellow;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+#box2 {
+  border: 5px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 22px;
+  background: dodgerblue;
+  
+  /* Will stay in the middle of the page */
+  margin-left: auto;
+  margin-right: auto;
+}
