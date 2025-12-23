@@ -43,7 +43,7 @@ def update_lesson_number(conf: ConfigParser, new_number: int) -> None:
         conf_overwrite.write(configfile)
 
 
-def create_html_content(lesson_name: str) -> str:
+def create_html_content(lesson_name: str, lesson_number: int) -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +52,8 @@ def create_html_content(lesson_name: str) -> str:
     <title>{lesson_name}</title>
 </head>
 <body>
-    <h1>{lesson_name}</h1>
+    <div id="my-div"><h1>{lesson_name}</h1></div>
+    <p>{186- lesson_number} lessons remians.</p>
     <script src="main.js"></script>
 </body>
 </html>
@@ -83,7 +84,7 @@ def main():
     html_path = folder_path / "index.html"
     js_path = folder_path / "main.js"
 
-    html_path.write_text(create_html_content(lesson_name), encoding="utf-8")
+    html_path.write_text(create_html_content(lesson_name, lesson_number), encoding="utf-8")
     js_path.touch()
 
     # Update config for next run (current number + 1)
